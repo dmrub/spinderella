@@ -38,14 +38,12 @@ Point your good ol' browser to `http://localhost:{YOUR_PORT}` for some self-expl
 ### Form-style POST API
 HTTP POST requests can be made against SPINderella's form-style POST APIs
 ```
-curl --data "spinQueryText={your_SPIN_query}" api/spin/sparql
+curl -H "Content-Type: application/x-www-form-urlencoded" -X POST -d "spinQueryText={your_SPIN_query}" http://localhost:{port}/api/spin/sparql
 ```
 and 
 ```
-curl --data "sparqlQueryText={your_SPARQL_query}&spinQueryURI={your_SPIN_resourceURI}" api/sparql/spin
+curl -H "Content-Type: application/x-www-form-urlencoded" -X POST -d "sparqlQueryText={your_SPARQL_query}&spinQueryURI={your_SPIN_resourceURI}" http://localhost:{port}/api/sparql/spin
 ```
-
-The Content-Type HTTP header must be set to application/x-www-form-urlencoded. 
 The parameter `spinQueryURI` is optional. If not set, SPINderella defaults to a blank node.
 
 ## Contributing
