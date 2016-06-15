@@ -16,8 +16,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://codemirror.net/lib/codemirror.js"></script>
-    <script src="http://codemirror.net/mode/turtle/turtle.js"></script>"
-    <script src="http://codemirror.net/mode/sparql/sparql.js""></script>
+    <script src="http://codemirror.net/mode/turtle/turtle.js"></script>
+    <script src="http://codemirror.net/mode/sparql/sparql.js"></script>
     <script src="http://codemirror.net/mode/xml/xml.js"></script>
     <script src="https://codemirror.net/addon/display/autorefresh.js"></script>
     <script src="http://www.appelsiini.net/projects/chained/jquery.chained.min.js"></script>
