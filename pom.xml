@@ -44,7 +44,7 @@
 				<version>2.2</version>
 				<configuration>
 					<server>SPINderella</server>
-					<port>8090</port>
+					<port>80</port>
 					<path>/</path>
 				</configuration>
 			</plugin>

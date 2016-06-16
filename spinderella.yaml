@@ -8,6 +8,7 @@ spec:
   containers:
   - name: fresco
     image: bali:5000/spinderella
+    imagePullPolicy: Always
     ports:
     - name: tcp
       protocol: TCP
