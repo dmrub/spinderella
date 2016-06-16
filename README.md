@@ -19,7 +19,7 @@ You can modify SPINderella's listening port in the `pom.xml`
 			<version>2.2</version>  	
             		<configuration>
 				<server>SPINderella</server>
-				<port>8080</port>
+				<port>8090</port>
 				<path>/</path>
 			</configuration>
 		</plugin>
@@ -33,16 +33,16 @@ Get SPINderella up and running. Then, use your favourite REST client against one
 
 
 ### HTML UI
-Point your good ol' browser to `http://localhost:{YOUR_PORT}` for some self-explainatory WebUI.
+Point your good ol' browser to `http://localhost:8090` for some self-explanatory HTML UI.
 
 ### Form-style POST API
 HTTP POST requests can be made against SPINderella's form-style POST APIs
 ```
-curl -H "Content-Type: application/x-www-form-urlencoded" -X POST -d "spinQueryText={your_SPIN_query}" http://localhost:{port}/api/spin/sparql
+curl -H "Content-Type: application/x-www-form-urlencoded" -X POST -d "spinQueryText={your_SPIN_query}" http://localhost:8090/api/spin/sparql
 ```
 and 
 ```
-curl -H "Content-Type: application/x-www-form-urlencoded" -X POST -d "sparqlQueryText={your_SPARQL_query}&spinQueryURI={your_SPIN_resourceURI}" http://localhost:{port}/api/sparql/spin
+curl -H "Content-Type: application/x-www-form-urlencoded" -X POST -d "sparqlQueryText={your_SPARQL_query}&spinQueryURI={your_SPIN_resourceURI}" http://localhost:8090/api/sparql/spin
 ```
 The parameter `spinQueryURI` is optional. If not set, SPINderella defaults to a blank node.
 

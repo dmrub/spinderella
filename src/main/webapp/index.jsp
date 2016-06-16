@@ -123,8 +123,8 @@
                 <div id="menu3" class="tab-pane fade">
                     <h3>What does SPINderella do?</h3>
                     <p>SPINderella provides a REST API to convert between textual <a href="https://www.w3.org/TR/sparql11-overview/">SPARQL syntax</a> and the <a href="http://spinrdf.org/">SPIN RDF Vocabulary</a>.</p> 
-                    <h3>Contact</h3>
-                    <p>Add vcard here...</p>
+                    <h3>Get your own SPINderella!</h3>
+                    <p>The source code of this tool is available from <a href="https://github.com/rmrschub/spinderella">GitHub</a>.
                 </div>
                 </div>
             </div>
