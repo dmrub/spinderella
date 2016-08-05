@@ -77,8 +77,10 @@ public class SPINderellaService
 		try
 		{
 			final Query sparqlQuery = QueryFactory.create(sparqlQueryText);
+			
 			final Model spinQueryModel = ModelFactory.createDefaultModel();
 			spinQueryModel.setNsPrefix(SP.PREFIX, SP.NS);
+			spinQueryModel.setNsPrefixes(sparqlQuery.getPrefixMapping());
 			
 	
 			ARQ2SPIN arq2SPIN = new ARQ2SPIN( spinQueryModel, true );
